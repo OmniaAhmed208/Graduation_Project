@@ -1,0 +1,99 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+.body1,.body2,.body3,.body4,.body5{
+    background: linear-gradient(to right, rgb(255 211 121), rgb(205 195 165 / 62%));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.body2{ background:linear-gradient(to right, rgb(6 15 72), rgb(148 195 220 / 41%));}
+.body3{background: linear-gradient(to right, rgb(183 142 59 / 64%), rgb(84 48 24));}
+.body4{background: linear-gradient(to right, rgb(167 122 145), rgb(255 211 121));}
+.body5{background: linear-gradient(to right, rgb(155 8 8), rgb(0 0 0 / 70%))}
+
+.body1::-webkit-scrollbar,
+.body2::-webkit-scrollbar,
+.body3::-webkit-scrollbar,
+.body4::-webkit-scrollbar,
+.body5::-webkit-scrollbar {width: 0.5em;background-color: #111823;}
+
+.body1::-webkit-scrollbar-thumb {background-color: #ffd47a;box-shadow: 0px 0px 30px 30px #ffd37a;}
+.body2::-webkit-scrollbar-thumb {background-color: #48547f;box-shadow: 0px 0px 30px 30px #48547f;}
+.body3::-webkit-scrollbar-thumb {background-color: #ceb37f;box-shadow: 0px 0px 30px 30px #ceb37f;}
+.body4::-webkit-scrollbar-thumb {background-color: #a77a90;box-shadow: 0px 0px 30px 30px #a77a90;}
+.body5::-webkit-scrollbar-thumb {background-color:  #9a0909;box-shadow: 0px 0px 30px 30px #9a0909;}
+
+.container{
+    position: relative;
+    width: 1100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 30px;
+    padding-top: 145px;
+    float: left;
+}
+
+.container .card{
+    position: relative;
+    max-width: 300px;
+    height: 210px;
+    background: #fff;
+    margin: 30px 10px;
+    padding: 20px 15px;
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+    transition: 0.7s ease-in-out;
+}
+
+.container .card:hover{
+    height: 470px;
+}
+
+.container .card .imgBx{
+    position: relative;
+    max-width: 260px;
+    height: 100px;
+    top:-60px;
+    left: 4px;
+    z-index: 1;
+}
+
+.container .card .imgBx img{max-width: 100%;border-radius: 4px;}
+
+.container .card .content{
+    position: relative;
+    margin-top: -140px;
+    padding: -1px 15px;
+    padding-top: 134px;
+    text-align: center;
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 1;
+    margin-top: -55px;
+    transition-delay: 0.3s;
+}
+h2{
+    position: relative;
+    text-align: center;
+    margin-top: 16px;
+    font-size: 142%;
+}
+
+h4{margin-top: -13px;}
+
+.h41{margin-top: 17px;}
+
+.i1{height: 172px;}
+
+.i2{height: 172px; width: 260px;}

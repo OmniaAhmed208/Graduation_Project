@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="icon" href="../images/eye-of-ra.png" />
+    <title>Egypt Money</title>
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index_style.css" />
+    <link rel="stylesheet" href="../css/index_style2.css" />
+    <link rel="stylesheet" href="../css/forNavBar.css" />
+    <link rel="stylesheet" href="../css/coins.css" />
+  </head>
+  <body>
+    <!--============================header=============================-->
+    <header class="header">
+      <nav
+        class="navbar py-2 fixed-top"
+        style="
+          background: linear-gradient(
+            to right,
+            rgba(199, 99, 99, 0.445),
+            rgba(0, 0, 0, 0.315)
+          );
+        "
+        id="navbar"
+      >
+        <a href="../php/index.php"
+          ><img src="../images/icon.png" style="zoom: 12%; margin-left: -78px"
+        /></a>
+        <a href="../php/index.php"
+          ><h2
+            class="navbar-brand text-white"
+            style="
+              font-size: 1.4rem;
+              padding-left: 30px;
+              padding-top: 1.5%;
+              font-family: sans-serif;
+            "
+          >
+            EGYPTOS
+          </h2></a
+        >
+        <div class="cont" style="margin-left: 55px">
+          <input type="text" placeholder="Search..." />
+          <div class="search"></div>
+        </div>
+        <div style="clear: both"></div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../php/index.php" class="nav-link" style="font-size: 1rem"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#mapping" class="nav-link" style="font-size: 1rem"
+              >Places</a
+            >
+          </li>
+          <li class="nav-item" onclick="toggleFav();">
+            <a
+              class="nav-link"
+              style="font-size: 1rem; color: white; cursor: pointer"
+              >Favourites</a
+            >
+          </li>
+          <li class="nav-item dropdown" style="font-size: 1.6rem">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              style="font-size: larger; color: white; font-size: 1rem"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >More</a
+            >
+            <div
+              class="dropdown-menu"
+              style="min-width: 10.2rem; font-size: 13px"
+            >
+              <a class="dropdown-item sm-1" href="types.html"
+                >Types of Tourism</a
+              >
+              <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+              <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Other Pages</a
+              >
+              <div
+                class="dropdown-menu"
+                style="min-width: 10rem; font-size: 13px"
+              >
+                <a class="dropdown-item sm-1" href="prophets.html"
+                  >Prophetic Locations</a
+                >
+                <a class="dropdown-item" href="JouHolyFamily.html"
+                  >Holy Family Trip</a
+                >
+                <a class="dropdown-item" href="#">Religious places</a>
+                <a class="dropdown-item" href="books.html">Egyption Books</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="testimonials.html" class="nav-link" style="font-size: 1rem"
+              >Testimonials</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="profile.html"
+              ><img
+                src="../images/person2.png"
+                class="account"
+                style="zoom: 68%; margin: -43% 0 0 0"
+            /></a>
+          </li>
+        </ul>
+        <div class="hamburger" style="background-color: transparent">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--=================================home==============================  -->
+
+    <div class="cards">
+      <div class="Fav">
+        <div>
+          <img src="../images/close.png" class="close" onclick="toggleFav();" />
+        </div>
+      </div>
+
+      <section class="hdr">
+        <span class="addrs">Egyption Money</span>
+      </section>
+
+      <div class="card">
+        <div class="front">
+          <section>
+            <img class="img1" src="../images/coins/1bound1.jpg" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img1" src="../images/coins/1bound2.jpg" />
+          </section>
+        </div>
+      </div>
+
+      <h3 style="padding-top: 10px">1 pound</h3>
+
+      <div class="card2">
+        <div class="front">
+          <section>
+            <img class="img1" src="../images/coins/half-pound1.jpg" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img1" src="../images/coins/half-pound2.jpg" />
+          </section>
+        </div>
+      </div>
+
+      <h3 class="head2">half pound<br />50 piasters</h3>
+
+      <div class="card3">
+        <div class="front">
+          <section>
+            <img class="img1" src="../images/coins/25piasters1..png" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img1" src="../images/coins/25piasters2..png" />
+          </section>
+        </div>
+      </div>
+
+      <h3 class="head3" style="padding-top: 10px">25 piasters</h3>
+
+      <!--paper-->
+
+      <div class="card8">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/200pound1.jpg" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/200pound2.jpg" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">200 pounds</h3>
+        <ul>
+          <li>coin front : Qani Bay Al Ramah Mosque</li>
+          <li>coin back : Egyptian writer</li>
+        </ul>
+      </div>
+
+      <div class="card9">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/100pound1.jpg" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/100pound2.jpg" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">100 pounds</h3>
+        <ul>
+          <li>coin front : Sultan Hassan Mosque</li>
+          <li>coin back : sphinx</li>
+        </ul>
+      </div>
+
+      <div class="card10">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/50pound1.jpg" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/50pound2.jpg" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">50 pounds</h3>
+        <ul>
+          <li>coin front : Abu Huraiba Mosque</li>
+          <li>coin back : Temple of Horus</li>
+        </ul>
+      </div>
+
+      <div class="card11">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/20pound1.jpg" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/20pound2.jpg" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">20 pounds</h3>
+        <ul>
+          <li>coin front : Mohamed Ali Mosque</li>
+          <li>coin back : Pharaonic chariot</li>
+        </ul>
+      </div>
+
+      <div class="card12">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/10pound1.png" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/10pound2.png" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">10 pounds</h3>
+        <ul>
+          <li>coin front : Al-Rifai Mosque</li>
+          <li>coin back : Khafre and Horus behind him</li>
+        </ul>
+      </div>
+
+      <div class="card13">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/5pound1.png" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/5pound2.png" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">5 pounds</h3>
+        <ul>
+          <li>coin front : Ibn Tulun Mosque</li>
+          <li>
+            coin back : Habi, the god of the Nile for the ancient Egyptians, the
+            pharaohs
+          </li>
+        </ul>
+      </div>
+
+      <div class="card14">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/1pound1..png" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/1pound2..png" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">1 pound</h3>
+        <ul>
+          <li>coin front : Qaitbay Mosque</li>
+          <li>coin back : Abu Simbel Temple</li>
+        </ul>
+      </div>
+
+      <div class="card15">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/50piasters1..png" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/50piasters2..jpg" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">half a pound</h3>
+        <ul>
+          <li>coin front : Al-Azhar Mosque</li>
+          <li>coin back : Statue of Ramses II</li>
+        </ul>
+      </div>
+
+      <div class="card16">
+        <div class="front">
+          <section>
+            <img class="img2" src="../images/coins/25piasters01.png" />
+          </section>
+        </div>
+
+        <div class="back">
+          <section>
+            <img class="img2" src="../images/coins/25piasters02.png" />
+          </section>
+        </div>
+      </div>
+      <div class="para">
+        <h3 class="head8">a quarter of a pound</h3>
+        <ul>
+          <li>coin front : Sayeda Aisha Mosque</li>
+          <li>coin back : Eagle Saladin, wheat, corn and cotton</li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+  </body>
+</html>

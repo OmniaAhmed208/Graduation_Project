@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cultural Tourism</title>
+        <link rel="icon" href="../images/eye-of-ra.png">
+        <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+        <link rel="stylesheet" href="../css/types of tourism.css" />
+    </head>
+    <body class="body3">
+<!--============================header=============================-->
+<header class="header">
+    <nav class="navbar py-2 fixed-top" style="background: linear-gradient(to right, rgb(206 180 127 / 74%), rgb(86 50 26 / 68%));" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic Locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+          <!---=======================================home====================================-->
+
+      <div class="container">
+
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/camel.jpg" class="i2">
+                <h2>Visit the pyramids</h2>
+            </div>
+            <div class="content">
+                <h4>Giza</h4>
+                <p>Tour the Pyramids of Giza and the Sphinx with an expert Egyptologist
+                     as a tour guide and take a camel trek to visit the Sphinx.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/mountMoses.jpg">
+                <h2>Mount Moses</h2>
+            </div>
+            <div class="content">
+                <h4>Sinai peninsula</h4>
+                <p>It is one of the most important mountains in Sinai
+                     and is visited by a large number of tourists.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/جولةالأقصر.jpg" >
+                <h2>Luxor Tour</h2>
+            </div>
+            <div class="content">
+                <h4>Luxor</h4>
+                <p>Discover the landmarks of Luxor on the eastern and western banks
+                     of the Nile in the Valley of the Kings, the Temple of Hatshepsut and Karnak.
+                     And see a large collection of artworks for private tombs and up to the majestic royal temples.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Cairo_opera_house.jpg">
+                <h2>Egyptian Opera House</h2>
+            </div>
+            <div class="content">
+                <h4 class="h41">Cairo</h4>
+                <p>It is characterized by the presence and abundance of many cultural
+                     centers such as opera houses, a creative center and a music library
+                      with many theaters. Such as a performing arts or arts center.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Khan-el-Khalili.jpg">
+                <h2>Khan el-Khalili</h2>
+            </div>
+            <div class="content">
+                <h4>Cairo</h4>
+                <p>It is characterized by the presence of a shrine and a shrine for
+                one of the granddaughters of Hussein bin Ali, she was named a nymph due to her beauty and piety.</p>
+            </div>
+        </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Museum-of-Islamic-Art.jpg" class="i2">
+                    <h2>Islamic art museum</h2>
+                </div>
+                <div class="content">
+                    <h4>Cairo</h4>
+                    <p>It includes the greatest collection of antiques, antiquities and treasures
+                         that were created under the Islamic civilization. It includes about eighty
+                          thousand masterpieces of ceramics, pottery, glass, rock crystal, metals,
+                           jewelry, wood, ivory and precious stones.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Egyptian-Museum.jpg" class="i2">
+                    <h2>Egyptian Museum</h2>
+                </div>
+                <div class="content">
+                    <h4>Cairo</h4>
+                    <p>Fragments of hills (white clouds) illuminate church bells, mountains and clouds,
+                         allowing eyes to admire the mosaics created by nature.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Royal-Jewelery-Museum.jpg" class="i2">
+                    <h2>Al-Jawhara Palace Museum</h2>
+                </div>
+                <div class="content">
+                    <h4 class="h41">Alexandria</h4>
+                    <p>It includes the ancient throne hall and some pieces of
+                         furniture from the era of Muhammad Ali, in addition to many Islamic antiquities.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Greco-Roman-Museum.jpg" class="i2">
+                    <h2>Greek Museum</h2>
+                </div>
+                <div class="content">
+                    <h4>Alexandria</h4>
+                    <p> It includes a large number of artifacts of historical and artistic value dating back to the BC era.</p>
+                </div>
+            </div>
+
+        </div>
+        <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+    </body>
+</html>

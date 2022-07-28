@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Religious Tourism</title>
+        <link rel="icon" href="../images/eye-of-ra.png">
+        <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+        <link rel="stylesheet" href="../css/types of tourism.css" />
+    </head>
+    <body class="body5">
+<!--============================header=============================-->
+<header class="header">
+    <nav class="navbar py-2 fixed-top" style="background: linear-gradient(to right, rgb(155 8 8 / 66%), rgb(77 76 76 / 81%));" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic Locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+          <!---=======================================home====================================-->
+      <div class="container">
+
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Al-Azhar-Mosque.jpg" >
+                <h2>Praying in mosques</h2>
+            </div>
+            <div class="content">
+                <p>There are many mosques in Egypt for prayer. And seeing
+                     the splendor of Islamic construction in the old Islamic style throughout the ages.</p>
+            </div>
+        </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Praying-in-churches.jpg">
+                    <h2>Praying in churches</h2>
+                </div>
+                <div class="content">
+                    <p>There are many churches in Egypt. And seeing the wonderful old-style building throughout the ages.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/ديرسانت.jpg" class="i2">
+                    <h2>St. Catherine's Monastery</h2>
+                </div>
+                <div class="content">
+                    <h4 class="h41">Sinai</h4>
+                    <p>Fragments of hills (white clouds) illuminate church bells, mountains and clouds,
+                         allowing eyes to admire the mosaics created by nature.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/elMo3ezStreet.jpg" class="i2">
+                    <h2>Enjoy the civilization</h2>
+                </div>
+                <div class="content">
+                    <h4>Cairo</h4>
+                    <p>On Al-Moez Li-Din Allah Al-Fatimi Street, the most beautiful thing that your eyes will
+                         see is the civilization of Egypt that dates back to the Middle Ages.</p>
+                </div>
+            </div>
+
+        </div>
+
+        <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+
+    </body>
+</html>

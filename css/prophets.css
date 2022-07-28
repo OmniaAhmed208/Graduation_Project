@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: consolas;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #111;
+}
+body::-webkit-scrollbar {width: 0.5em;background-color: #111111;}
+
+h1{
+  color: white;
+  text-align: center;
+  margin:12% 15% 11% 15%;
+  font-size: 56px;
+  letter-spacing: 0.1em;
+  word-spacing: -0.2em;
+  filter: drop-shadow(0px -3px 2px rgba(255,255,255,0.8))
+            drop-shadow(5px 5px 5px rgba(0,0,0,0.2))
+            drop-shadow(15px 15px 15px rgba(0,0,0,0.2));       
+}
+
+.container{
+    position:relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+    flex-wrap: wrap;
+}
+.container .box{
+    position: relative;
+    width: 320px;
+    height: 400px;
+    color: #fff;
+    background: #111;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -36px 30px ;
+    margin-bottom: 11%;
+    transition:all .5s ease-in-out;   
+    transform-style:preserve-3d;
+    perspective: 600px;
+}
+.container .box:hover{transform: rotateY(180deg);}
+
+.front{margin: -45px 0 0 331px;z-index: 2;backface-visibility: hidden;}
+
+.back{
+    margin: 0px 351px 0 -355px;
+    z-index: 1;
+    transform: rotateY(180deg);
+    backface-visibility: hidden;
+}
+.back p{margin: 5px 0 0 -33px;}
+
+.container .box::before,
+.container .box::after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg,#ffbc00,#ff0058);
+}
+
+.container .box::after{filter: blur(10px);}
+
+.container .box:nth-child(3)::before,
+.container .box:nth-child(3)::after{
+    background: linear-gradient(45deg,#ffbc00,#ff0058)
+}
+
+.container .box:nth-child(4)::before,
+.container .box:nth-child(4)::after{
+    background: linear-gradient(315deg,#03a9f4,#ff0058);
+}
+
+.container .box:nth-child(5)::before,
+.container .box:nth-child(5)::after{
+    background: linear-gradient(315deg,#4dff03,#00d0ff);
+}
+
+.container .box:nth-child(6)::before,
+.container .box:nth-child(6)::after{
+    background: linear-gradient(45deg,#df9d43,#00b7ff);
+}
+
+.container .box:nth-child(7)::before,
+.container .box:nth-child(7)::after{
+    background: linear-gradient(45deg,#a08eb9,#ebc300);
+}
+
+.container .box:nth-child(8)::before,
+.container .box:nth-child(8)::after{
+    background: linear-gradient(45deg,#4589d6,#f1125f);
+}
+
+.container .box:nth-child(9)::before,
+.container .box:nth-child(9)::after{
+    background: linear-gradient(45deg,#9100ff,#c1cf53);
+}
+
+.container .box:nth-child(10)::before,
+.container .box:nth-child(10)::after{
+    background: linear-gradient(45deg,#1a1509,#cecdbf);
+}
+.container .box:nth-child(11)::before,
+.container .box:nth-child(11)::after{
+    background: linear-gradient(45deg,#a19721,#00e7ff)
+}
+.container .box:nth-child(12)::before,
+.container .box:nth-child(12)::after{
+    background: linear-gradient(45deg,#afaeab,#3b5d60)
+}
+.container .box:nth-child(14)::before,
+.container .box:nth-child(14)::after{
+    background: linear-gradient(45deg,#2fc3bc,#af4894)
+}
+.container .box:nth-child(15)::before,
+.container .box:nth-child(15)::after{
+    background: linear-gradient(45deg,#52423a,#c7319f)
+}
+.container .box span{
+    position: absolute;
+    top: 6px;
+    left: 6px;
+    right: 6px;
+    bottom: 6px;
+    background: rgba(0,0,0,0.6);
+    background-color: rgb(255 255 255 / 55%);
+}
+
+.container .box span::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%; 
+    height: 100%;
+    background: rgba(255,255,255,0.1);
+    pointer-events: none;
+}
+.container .box .content{
+    width: 333.5px;
+    position: relative;
+    z-index: 10;
+    padding: 22px 47px;
+}
+.container .box .content h2{
+    font-size: 2em;
+    color: #fff;
+    margin-bottom: 10px;
+    margin-left: -12px;
+    width: 111%;
+    word-spacing: -0.2em;
+}    
+.container .box .content h3{
+    word-spacing: -0.2em;
+    margin-left: -12px;
+}
+.container .box .content p{
+    font-size: 1.1em;
+    color: #fff;
+    margin-bottom: 10px;
+    line-height: 1.4em;
+}
+
+.container img{width: 128.4%;margin: 2px 0 17px -35px;}

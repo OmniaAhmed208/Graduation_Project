@@ -1,0 +1,279 @@
+body{
+    background: -webkit-linear-gradient(to right, rgb(254 255 121), rgb(253 255 121));
+    background: -o-linear-gradient(to right, rgb(254 255 121), rgb(253 255 121)); 
+    background: -moz-linear-gradient(to right, rgb(254 255 121), rgb(253 255 121));
+    background: linear-gradient(to right, rgb(254 255 121), rgb(253 255 121));
+    position: fixed;
+}
+html{background: #fdff79;}
+
+.nav-link{color: black}
+
+.paragrah{width: 445px;top: 60px;position: absolute;}
+
+.choose{
+    margin-left: 116px;
+    margin-top: 116px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-size: 70px;
+    letter-spacing: 10.1px;
+    text-shadow:-2px 6px 3px rgb(132 195 29 / 40%);
+}
+
+.p11{
+    font-size: 30px;
+    margin-top: 26px;
+    margin-left: 102px;
+    font-family: 'Lucida Sans Regular',Segoe UI,Frutiger,Frutiger Linotype,Dejavu Sans,Helvetica Neue,Arial,sans-serif; 
+    text-shadow:-2px 6px 3px rgb(132 195 29 / 40%);
+}
+.p22{
+    font-size: 37px;
+    margin-left: 160px;
+    margin-top: -13px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    text-shadow:-2px 6px 3px rgb(132 195 29 / 40%);
+}
+.p3{
+    font-size: 68px;
+    margin-left: 159px;
+    margin-top: -21px;
+    font-family: Papyrus,fantasy;
+    text-shadow:-2px 6px 3px rgb(132 195 29 / 40%);
+}
+.car{width: 75px;float: left;margin-right: 20px;margin-left: 145px;}
+
+.all{
+    position: absolute;
+    top: -49px;
+    left: 607px;
+    margin-top: 159px;
+    animation: moving infinite 13s ease-in-out;
+}
+
+.sh1,.sh3{
+    position: absolute;
+    width: 326px;
+    height: 334px;
+    border-top-left-radius: 330px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 68px;
+    border-top-right-radius: 7px;
+    left: -2px;
+    top: -5px;
+}
+.sh1{
+    background-image: url(../images/types/aswan1.jpg);
+    background-size: cover;
+    background-position:-67px;
+}
+.sh3{
+    border-bottom-right-radius: 369px;
+    border-top-right-radius: 0px;
+    left: 51px;
+    top: -102px;
+    transform: rotate(41deg);
+    width: 118px;
+    height: 506px;
+    background:linear-gradient(to left, rgba(243,568,126,1), rgb(285 279 120));
+}
+.sh2, .sh4 {
+    position: absolute;
+    top: -5px;
+    left: 331px;
+    width: 326px;
+    height: 334px;
+    /* background-color: blue; */
+    border-top-right-radius: 330px;
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 68px;
+    border-top-left-radius: 7px;
+}
+.sh2{
+    background-image: url(../images/types/siwa.jpeg);
+    background-size: 94% 100%;
+    background-position: -5px 0px;
+}
+.sh4 {
+    border-bottom-left-radius: 369px;
+    border-top-left-radius: 0px;
+    left: 149px;
+    top: -97px;
+    transform: rotate(-40deg);
+    width: 118px;
+    height: 492px;
+    background:linear-gradient(to right, rgba(243,568,126,1), rgb(285 279 120));
+}
+
+.ship{
+    position: absolute;
+    width: 659px;
+    height: 161px;
+    border-bottom-left-radius: 180px;
+    border-bottom-right-radius: 180px;
+    margin-top: 339px;
+}
+
+.i1,.i2,.i3{position: absolute;background-color: transparent;width: 220px;height: 161px;}
+
+.i1{
+    border-bottom-left-radius: 180px;
+    background-image: url(../images/types/بانوراما_من_داخل_معبد_الاقصر.jpg);
+    background-size: 209px 266px;
+    background-position: 7px -50px;
+}
+.i2{
+    left: 219px;
+    background-image: url(../images/types/محميات_7.jpg);
+    background-size: 242px 275px;
+    background-position: -19px -41px;
+}
+.i3{
+    left: 439px;
+    border-bottom-right-radius: 180px;
+    background-image: url(../images/types/Cairo-Al_Azhar_Mosque.jpg);
+    background-size: 277px 343px;
+    background-position: -60px -74px;
+}
+
+@keyframes moving{
+    0%{left:484px;}
+    50%{left: 618px;}
+    100%{left: 484px;}
+}
+
+.t1,.t2,.t3,.t4,.t5{
+    width: 54%;
+    font-family: sans-serif;
+    cursor: pointer;
+    position: absolute;
+    top: 243px;
+    left: 130px;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+    background: #00000094;
+    color: #ffeb3b;
+    padding: 0.5em 0.7em;
+    border-radius: 0.6em;
+    box-shadow: 2px 2px 8px #2cf306, -2px -2px 8px #2cf306;
+    opacity: 0;
+    transition: opacity 500ms ease;
+}
+
+.t2{width: 146px;left: 32px;}
+
+.t3{top: 60px;left: 57px;width: 107px;}
+
+.t4{top: 60px;left: 21px;width: 173px;}
+
+.t5{top: 60px;left: 37px;width: 118px;}
+
+.sh1:hover .t1,
+.sh2:hover .t2,
+.i1:hover .t3,
+.i2:hover .t4,
+.i3:hover .t5{
+    opacity: 1;
+    transition-delay: 200ms;
+    animation: move1 1 2s ease-in-out;
+    text-decoration: none;
+    color: #ffeb3b;
+}
+
+.sh2:hover .t2{animation: move2 1 2s ease-in-out;}
+
+.i1:hover .t3,
+.i2:hover .t4,
+.i3:hover .t5{animation: move3 1 2s ease-in-out;}
+
+@keyframes move1{
+    0%{left:100px;}
+    100%{left: 131px;}
+}
+@keyframes move2{
+    0%{left:70px;}
+    100%{left: 32px;}
+}
+@keyframes move3{
+    0%{top: 80px;}
+    100%{top: 60px;}
+}
+
+@media screen and (max-width:768px){
+    body{position: absolute;}
+    .all{
+        top: 250px;
+        bottom: 20px;
+        animation: moving2 infinite 13s ease-in-out;
+    }
+    
+    .choose{font-size: 50px;margin-left:136px;}
+    
+    .choose img{width: 35px;}
+    
+    .paragrah{left: 100px;top: 22px;}
+    
+    .p11{font-size: 27px;}
+    
+    .p22{font-size: 32px;}
+    
+    .p3{font-size: 60px;}
+    
+    .car{width: 62px;}
+    
+    .ship{width: 528px;}
+    
+    .sh2{
+    top: 25px;
+    left: 269px;
+    width: 260px;
+    height: 305px;
+    }
+    .sh1{
+    width: 260px;
+    height: 304px;
+    left: -2px;
+    top: 25px;
+    }
+    .sh3{
+    left: 33px;
+    top: -84px;
+    transform: rotate(39deg);
+    width: 96px;
+    height: 446px;
+    }
+    .sh4{
+    left: 132px;
+    top: -83px;
+    transform: rotate(-39deg);
+    width: 96px;
+    height: 446px;
+    }
+    
+    .i2{left: 167px;width: 206px;height: 160px;}
+    .i3{left: 373px;width: 155px;height: 160px;}
+    .i1{width: 167px;height: 160px;}
+
+    .t1,.t2,.t3,.t4,.t5{font-size: 16px;width: 51%;left: 70px;}
+    
+    .t2{width: 118px;}
+    
+    .t4{width: 66%;left: 38px;}
+   
+    .t5{ width: 59%;left: 17px;}
+   
+    .sh1:hover .t1{animation: movet1 1 2s ease-in-out;}
+}
+
+@keyframes moving2{
+    0%{ left:30px;}
+    50%{left: 90px;}
+    100%{left: 30px;}
+}
+
+@keyframes movet1{
+    0%{left:70px;}
+    100%{left: 100px;}
+}

@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Entertainment Tourism</title>
+        <link rel="icon" href="../images/eye-of-ra.png">
+        <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+        <link rel="stylesheet" href="../css/types of tourism.css" />
+    </head>
+    <body class="body1">
+<!--============================header=============================-->
+<header class="header">
+    <nav class="navbar py-2 fixed-top" style="background:linear-gradient(to right, rgb(183 142 59 / 64%), rgb(84 48 24 / 55%));" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic Locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+          <!---=======================================home====================================-->
+
+      <div class="container">
+
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Race.jpg">
+                <h2>Race</h2>
+            </div>
+            <div class="content">
+                <h4>El Gouna</h4>
+                <p>If you love a challenge and want to spend quality time with family and friends,
+                     try visiting Go Karting in El Gouna and live the racing atmosphere with your loved one.</p>
+            </div>
+        </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Ras-Muhammed.jpg">
+                    <h2>Marine adventure</h2>
+                </div>
+                <div class="content">
+                    <h4>Sinai peninsula</h4>
+                    <p>In ras muhammed, Enjoy the sightseeing while sailing, which is
+                         famous for its marine life and clear waters. Upon arrival, use your snorkeling gear or the equipment provided to explore the
+                         wonderful underwater world, take a dip in the warm waters, or just sunbathe on the deck.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Fayoum.1.jpg" class="i2">
+                    <h2>Dune skiing</h2>
+                </div>
+                <div class="content">
+                    <h4>Wadi El Rayan</h4>
+                    <p>One of the best dune skiing locations in Fayoum in the entire
+                         world due to its soft and deep sand dunes.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/Safari.jpg">
+                    <h2>Safari</h2>
+                </div>
+                <div class="content">
+                    <h4>El Gouna</h4>
+                    <p>Explore the Egyptian desert by riding a beach buggy on a fun safari. On the safari trip,
+                         you will experience a different atmosphere in the Bedouin camps</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/camping.jpg" class="i2">
+                    <h2>Camping</h2>
+                </div>
+                <div class="content">
+                    <h4>Fayoum</h4>
+                    <p>Its land hosts many attractions from different eras dating back to the Pharaonic, Greco-Roman, Coptic and Islamic eras.
+                        Its sand dunes, palm trees, lakes and valleys really make this place worth discovering.</p>
+                </div>
+            </div>
+
+             <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/ridingHorse.jpg" class="i2">
+                    <h2>Horse riding</h2>
+                </div>
+                <div class="content">
+                    <h4>Hurghada</h4>
+                    <p>Horse culture is still very lively in Egypt.
+                         Tour the horses with the best horses and experienced trainers.
+                         Horse trainers are also provided to give you training before you ride,
+                          and to assist you throughout your journey.</p>
+                </div>
+            </div> 
+
+            <div class="card">
+                <div class="imgBx">
+                   <img src="../images/types/dahab.webp">
+                   <h2>Dahab</h2>
+               </div>
+               <div class="content">
+                   <h4>Sinai peninsula</h4>
+                   <p>Dahab is famous for its crystal clear beaches and natural diving sites rich in coral reefs.
+                       <br> It includes a number of important tourist places such as Abu Galum Reserve and the Bluehole area,
+                        which is an international diving area.</p>
+               </div>
+             </div>
+
+             <div class="card">
+                <div class="imgBx">
+                   <img src="../images/types/WashwashValley.jpg">
+                   <h2>Jumping in Wadi Washwash Lake</h2>
+               </div>
+               <div class="content">
+                   <h4 class="h41">Sinai</h4>
+                   <p>Seeing the most beautiful lake in Sinai and enjoying the crazy jump</p>
+               </div>
+             </div>
+
+             <div class="card">
+                <div class="imgBx">
+                   <img src="../images/types/diving.jpg">
+                   <h2>Snorkeling</h2>
+               </div>
+               <div class="content">
+                   <h4>Hurghada</h4>
+                   <p>Enjoy a snorkeling trip and water sports in Hurghada. Explore the Red Sea.</p>
+               </div>
+             </div>
+
+             <div class="card">
+                <div class="imgBx">
+                   <img src="../images/types/Bedouin-evening.jpg">
+                   <h2>Bedouin evening</h2>
+               </div>
+               <div class="content">
+                   <h4>Dahab</h4>
+                   <p>Enjoy spending quality time in the lap of the mountains,
+                        listening to Bedouin music, and watching the fireworks in the tent.</p>
+               </div>
+             </div>
+
+             <div class="card">
+                <div class="imgBx">
+                   <img src="../images/types/Felucca.jpg">
+                   <h2>felucca on the Nile</h2>
+               </div>
+               <div class="content">
+                   <h4>Cairo</h4>
+                   <p>Felucca sailing on the Nile There are many felucca cruises on the Nile</p>
+               </div>
+             </div>
+
+             <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/White-and-Colored-Valley.png" class="i2">
+                    <h2>White and Colored Valley</h2>
+                </div>
+                <div class="content">
+                    <h4 class="h41">Sinai</h4>
+                    <p>Where the white strait, the paradise of the oasis of Hazrat,
+                         the mushroom rock and the colorful canyon, enjoy nature and its scenic beauty.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/diving2.jpg" class="i2">
+                    <h2>Diving in The Blue Hole</h2>
+                </div>
+                <div class="content">
+                    <h4 class="h41">Dahab</h4>
+                    <p>The Blue Hole is a unique and beautiful place in Dahab.
+                         Take a day trip to the Blue Hole and snorkel in the clear waters to see coral reefs and colorful fish.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/rideTheHorse.jpg" class="i2">
+                    <h2>Horse riding</h2>
+                </div>
+                <div class="content">
+                    <h4>Giza</h4>
+                    <p>Horse riding and watching the pyramids in Giza</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                   <img src="../images/types/watchingFish.jpg" class="i2">
+                   <h2>watching fish</h2>
+               </div>
+               <div class="content">
+                   <h4>El Gouna</h4>
+                   <p>If you have children or don't feel like diving into the sea,
+                        the glass boat is perfect for catching a glimpse of the underwater marine life.</p>
+               </div>
+             </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="../images/types/African-Park.jpg" class="i2">
+                    <h2>African Park</h2>
+                </div>
+                <div class="content">
+                    <h4>Alexandria</h4>
+                    <p>You can walk among the animals and those who own a car can walk through
+                         the directions inside the park, see the animals and play 
+                        with the monkeys that move on top of the cars, it gives the visitor a feeling as if he was in Africa.</p>
+                </div>
+            </div>
+
+        </div>
+
+    <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+    </body>
+</html>

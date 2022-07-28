@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with Us</title>
+    <link rel="icon" href="../images/eye-of-ra.png">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+    <link rel="stylesheet" href="../css/chatChoise.css">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+
+<body>
+<!--============================header=============================-->
+<header class="header " >
+    <nav class="navbar py-2 fixed-top" style="background: transparent;" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic Locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+<!-- ============== Home ============== -->
+
+    <div class="cont1">
+
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+        </div>
+
+        <p class="paragraph">it's not just chat
+        <p class="paragraph"> it's <span> Chat Bot </span></p></p>
+        <p class="paragraph2">Welcome to our site, we hope you enjoy it.<br>
+            We offer you a nice conversation through this chat.</p>
+    </div>
+
+    <div >
+        <img src="../images/hand.png" id="hand">
+    </div>
+
+    <!-- CHAT BAR BLOCK -->
+    <div class="chat-bar-collapsible">
+        <button id="chat-button" type="button" class="collapsible">
+            Chat with us!
+            <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+        </button>
+
+        <div class="content">
+            <div class="full-chat-block">
+                <!-- Message Container -->
+                <div class="outer-container">
+                    <div class="chat-container">
+                        <!-- Messages -->
+                        <div id="chatbox">
+                            <h5 id="chat-timestamp"></h5>
+                            <!-- Questions -->
+                            <p class="userText" >
+                                <span>
+                                    Hello There <i id="chat-icon" style="color: crimson;" class="fa fa-fw fa-heart"></i> 
+                                </span>
+                            </p>
+                            <p class="userText" >
+                                <span> Please click on these questions 
+                                   <img src="../images/smile.png" id="chat-icon" class="fa fa-fw fa-heart"> 
+                                </span>
+                            </p>
+                            <p class="botText q1" onclick="Cq1();"><span>How many governorates in Egypt?</span></p>
+                            <p class="userText a1" ><span>There are 27 governorates in Egypt</span></p>
+                            <p class="botText q2" onclick="Cq2();"><span>What are they?</span></p>
+                            
+                            <p class="userText a2">
+                                <span>They are like <br>
+                                <span class="cc" onclick="Cg1();">. Alexandria</span>
+                                <span class="cc" onclick="Cg2();">. Aswan</span>
+                                <span class="cc" onclick="Cg3();">. Giza</span>
+                                <span class="cc" onclick="Cg4();">. New-Vally</span>
+                                <span class="cc" onclick="Cg5();">. Faiyum</span>
+                                <span class="cc" onclick="Cg6();"></span>
+                            </p>
+
+                            <p class="userText a3">
+                                <span>Choose one of them
+                                   <img src="../images/smile.png" id="chat-icon" class="fa fa-fw fa-heart"> <br>
+                                   <a href="../php/place.php" style="color: #fff; text-decoration: none;">
+                                   You can choose the rest of the provinces from places page</a>
+                                </span>
+                            </p>
+
+                            <p class="botText q3"><span>What is inside Alexandria?</span></p>
+                            <p class="userText g1"><span>For example there are <br>
+                                . Bibliotheca Alexandrina <br>
+                                . Qaitbay Citadel <br>
+                                . Montazah Palace</span>
+                            </p>
+                            <p class="userText a4">
+                                <span><a href="alex.html" style="color: #fff; text-decoration: none;">
+                                    If you would like to see more, please visit the alexandria page.</a>
+                                    <img src="../images/smile2.png" id="chat-icon" class="fa fa-fw fa-heart">
+                                </span>
+                            </p>
+
+                            <p class="botText q4"><span>What is inside Aswan?</span></p>
+                            <p class="userText g2"><span>For example there are <br>
+                                . Philae Temple <br>
+                                . Nubian Museum <br>
+                                . Lake Nasser Temples</span>
+                            </p>
+                            <p class="userText a5">
+                                <span>If you would like to see more, please visit the aswan page.
+                                    <img src="../images/smile2.png" id="chat-icon" class="fa fa-fw fa-heart">
+                                </span>
+                            </p>
+
+                            <p class="botText q5"><span>What is inside Giza?</span></p>
+                            <p class="userText g3"><span>For example there are <br>
+                                . The Pyramids <br>
+                                . Pharaonic Village <br>
+                                . Khufu Ship Museum</span>
+                            </p>
+                            <p class="userText a6">
+                                <span><a href="../php/Giza.php" style="color: #fff; text-decoration: none;">
+                                If you would like to see more, please visit the giza page.</a>
+                                    <img src="../images/smile2.png" id="chat-icon" class="fa fa-fw fa-heart">
+                                </span>
+                            </p>
+                            
+                            <p class="botText q6"><span>What is inside New-Vally?</span></p>
+                            <p class="userText g4"><span>For example there are <br>
+                                . White Desert <br>
+                                . Farafra Oasis <br>
+                                . The Black Desert</span>
+                            </p>
+                            <p class="userText a7">
+                                <span><a href="../php/New-Vally.php" style="color: #fff; text-decoration: none;">
+                                If you would like to see more, please visit the new-vally page.</a>
+                                    <img src="../images/smile2.png" id="chat-icon" class="fa fa-fw fa-heart">
+                                </span>
+                            </p>
+
+                            <p class="botText q7"><span>What is inside Faiyum?</span></p>
+                            <p class="userText g5"><span>For example there are <br>
+                                . Rayan Valley <br>
+                                . Qarun Palace <br>
+                                . Whale Valley Reserve</span>
+                            </p>
+                            <p class="userText a8">
+                                <span><a href="../php/Faiyoum.php" style="color: #fff; text-decoration: none;">
+                                    If you would like to see more, please visit the faiyum page.</a>
+                                    <img src="../images/smile2.png" id="chat-icon" class="fa fa-fw fa-heart">
+                                </span>
+                            </p>
+
+                        </div>
+
+                        <!-- User input box -->
+                        <div class="chat-bar-input-block">
+                            <div id="userInput"><p></p></div>
+
+                            <div class="chat-bar-icons"></div>
+                        </div>
+
+                        <div id="chat-bar-bottom">
+                            <p></p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="../js/chat11.js"></script>
+<script src="../js/chat22.js"></script>
+<script src="../js/chatChoise.js"></script>
+
+<script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+
+</html>

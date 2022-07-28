@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Virtual Reality</title>
+    <link rel="icon" href="../images/eye-of-ra.png" />
+    <link rel="stylesheet" href="../css/all.min.css" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" href="../css/index_style.css" />
+    <link rel="stylesheet" href="../css/index_style2.css" />
+    <link rel="stylesheet" href="../css/forNavBar.css" />
+    <link rel="stylesheet" type="text/css" href="../css/vr.css" media="all" />
+  </head>
+  <body>
+    <header class="header" id="h1">
+      <nav
+        class="navbar py-2 fixed-top"
+        style="background: #202226c2"
+        id="navbar"
+      >
+        <a href="../php/index.php"
+          ><img src="../images/icon.png" style="zoom: 12%; margin-left: -78px"
+        /></a>
+        <a href="../php/index.php"
+          ><h2
+            class="navbar-brand text-white"
+            style="
+              font-size: 1.4rem;
+              padding-left: 30px;
+              padding-top: 1.5%;
+              font-family: sans-serif;
+            "
+          >
+            EGYPTOS
+          </h2></a
+        >
+        <div class="cont" style="margin-left: 55px">
+          <input type="text" placeholder="Search..." />
+          <div class="search"></div>
+        </div>
+        <div style="clear: both"></div>
+        <ul class="nav-menu">
+          <li class="nav-item">
+            <a href="../php/index.php" class="nav-link" style="font-size: 1rem"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#mapping" class="nav-link" style="font-size: 1rem"
+              >Places</a
+            >
+          </li>
+          <li class="nav-item" onclick="toggleFav();">
+            <a
+              class="nav-link"
+              style="font-size: 1rem; color: white; cursor: pointer"
+              >Favourites</a
+            >
+          </li>
+          <li class="nav-item dropdown" style="font-size: 1.6rem">
+            <a
+              class="nav-link dropdown-toggle"
+              data-toggle="dropdown"
+              style="font-size: larger; color: white; font-size: 1rem"
+              href="#"
+              role="button"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >More</a
+            >
+            <div
+              class="dropdown-menu"
+              style="min-width: 10.2rem; font-size: 13px"
+            >
+              <a class="dropdown-item sm-1" href="types.html"
+                >Types of Tourism</a
+              >
+              <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+              <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+              <div class="dropdown-divider"></div>
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="dropdown"
+                role="button"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Other Pages</a
+              >
+              <div
+                class="dropdown-menu"
+                style="min-width: 10rem; font-size: 13px"
+              >
+                <a class="dropdown-item sm-1" href="prophets.html"
+                  >Prophetic Locations</a
+                >
+                <a class="dropdown-item" href="JouHolyFamily.html"
+                  >Holy Family Trip</a
+                >
+                <a class="dropdown-item" href="#">Religious places</a>
+                <a class="dropdown-item" href="books.html">Egyption Books</a>
+              </div>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a href="testimonials.html" class="nav-link" style="font-size: 1rem"
+              >Testimonials</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="profile.html"
+              ><img
+                src="../images/person2.png"
+                class="account"
+                style="zoom: 68%; margin: -43% 0 0 0"
+            /></a>
+          </li>
+        </ul>
+        <div class="hamburger" style="background-color: transparent">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </header>
+    <!--=================================home==============================  -->
+
+    <div class="container">
+      <div class="Fav">
+        <div>
+          <img src="../images/close.png" class="close" onclick="toggleFav();" />
+        </div>
+      </div>
+
+      <h1>Virtual Reality <img src="../images/vr/vr.png" class="icon1" /></h1>
+      <!-- 1 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Abu Simbel Temple.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Abu Simbel Temple</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=sgMWWDvdKsV&mpu=497&minimap=1"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 2 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img
+            src="../images/vr/The Step Pyramid Complex of Djoser - Colonnade.webp"
+          />
+        </div>
+        <div class="card-text">
+          <h2>
+            The Step Pyramid Complex<br />
+            of Djoser - Colonnade
+          </h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=zBpDdPqxTKz&fbclid=IwAR0P5NqDIo5M4xGR8j9Mm0U-7p4aWH0GCjLvHS459NIAQsJXamvp8RKDAB0"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 3 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/giza-pyramids.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>giza-pyramids</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://www.360cities.net/image/giza-pyramids/vr">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 4 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Tomb of Menna.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Tomb of Menna</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=vLYoS66CWpk&fbclid=IwAR0Idgv2tSmdaPgCMvpDxc3AlkI7MMKqyCbI-Hd_dsFzYCuZzkviW9VYbzI"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!--5-->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Abu Serga Church.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Abu Serga Church</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=PfNu1RDRbZf&fbclid=IwAR2cFXnHfogkY1rXUgi066AjjtX8xYEP129Bx5TY7rUV7WvHhDKylgM6HJ4"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 6  -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Mohammed Ali Pasha Mosque.webp" />
+        </div>
+        <div class="card-text">
+          <h2>
+            Mohammed Ali Pasha <br />
+            Mosque
+          </h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://mpembed.com/show/?m=CqL3QB3dh7N&mpu=497&fbclid=IwAR0UbDo7H-dwdtirNXCj4Kxf7U8N5x_tV6Ce_AbQHUBVfxJCDswSbpJ_uYQ"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 7 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/King Tut Hall.webp" />
+        </div>
+        <div class="card-text">
+          <h2>King Tut Hall</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=85n8j312Ur4&fbclid=IwAR051tmtCeziVTuzlQzE4fVBCOUGCiQsawxWf2y10PnLh0czbQ0uanDInjk"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 8 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Museum of Islamic Art.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Museum of Islamic Art</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://mpembed.com/show/?m=GLcinPBnEet&mpu=497&fbclid=IwAR3GLsfGgNyrCXTv-3rCK04WBCNeswlfy-vzGu5HA1IOwwzrU8H8L5loJZQ"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 9 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Tomb of Ti.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Tomb of Ti</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=yc1fJfrKnBP&fbclid=IwAR18wlw4HXg_6oi97bVbH2EHYJ1PXltwFE0gaCjEu1sMzZl9IVsORKZpHFs"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 10 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Manasterly Palace & Nile Meter.webp" />
+        </div>
+        <div class="card-text">
+          <h2>
+            Manasterly Palace and <br />
+            Nile Meter
+          </h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=NYV1YmfPM3w&fbclid=IwAR3gLacMm_SdDeFUgDNNDcH8PiT2oiqsUw0_Yc07teVXFAmJS0E1U7cGZE4"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 11 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Niankh-Khnum and Khnumhotep Tomb.webp" />
+        </div>
+        <div class="card-text">
+          <h2>
+            Niankh-Khnum and <br />
+            Khnumhotep Tomb
+          </h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=PKxweZaPG3P&help=1&brand=1&play=1&hl=1&ts=2&title=1&tourcta=2&vrcoll=0&dh=1&lp=1&wts=1&fbclid=IwAR3RyD0AOpz8QBxkE8EVOZxIqzju4XfRWMw6jS7R7-7saVmn8g7c_uLId3Y"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 12 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Gayer-Andersen Museum.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Gayer-Andersen Museum</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://mpembed.com/show/?m=LCyv1zFUxiq&mpu=497&fbclid=IwAR16bgKHhZwjt0cYWWZJ7MmWMCroADfKyPETst5IXgSTB-ZNZYAVFGrxYCI"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 13 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Unas Pyramid.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Unas Pyramid</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=o5Ex5Xo7UkE&fbclid=IwAR2YMo8-PIbSOE_DUuyIBlWCCaBrJ6cFf8LZZMd06StpUNb862yKWq593gU"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 14 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Al-Fath Mosque.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Al-Fath Mosque</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://mpembed.com/show/?m=qhjXLPRDvRw&mpu=497&fbclid=IwAR1q8LXn544ha92M-RsxTOk89aDVRF3NtYJ1jW7-H_3JySHZsekzTjrK3Mg"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 15 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Tomb of Queen Meresankh III.webp" />
+        </div>
+        <div class="card-text">
+          <h2>
+            Tomb of Queen Meresankh<br />
+            III
+          </h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=d42fuVA21To&fbclid=IwAR03bz6cWh7ypDoVwb60JNanajmHpdQ6KQOZuIsbAkElhLJVknwfJ0NMbjM"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 16 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Coptic Museum.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Coptic Museum</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://mpembed.com/show/?m=yMMHWqMJZbY&mpu=497&fbclid=IwAR1qOi4QN1KylKukLnXi5VdMVZWnWLcp3LecAQLZB-LjCwwlya40exAhshU"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 17 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Tomb of Wahty.webp" />
+        </div>
+        <div class="card-text">
+          <h2>Tomb of Wahty</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=BsXpwTSYSyN&help=1&brand=1&play=1&hl=1&ts=2&title=1&tourcta=2&vrcoll=0&dh=1&lp=1&wts=1&fbclid=IwAR1opMCXUhvfPXODom8oDnnTGhHvMIPatC8Lte5JLQxeSf7HgsqbtQ-pw8o"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 18 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Aslam al-Silahdar Mosque.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Aslam al-Silahdar Mosque</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=YsCSsrvXMQS">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 19 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Tomb of Menna.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Tomb of Menna</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=vLYoS66CWpk">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 20 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Bab Zuwayla.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Bab Zuwayla</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=YZXMPtiuR9D">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 21 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Monastery of St. Anthony.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Monastery of St. Anthony</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=c4j6knCMvww">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 22 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Museum at the Monastery of St. Anthony.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Museum at the Monastery <br />of St. Anthony</h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=FBdkHbQzzVJ&brand=0">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 23 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Zawiya-Sabil Faraj Ibn Barquq.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>
+            Zawiya-Sabil <br />
+            Faraj Ibn Barquq
+          </h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=UCDj6MdbCes">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 24 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/The Karaite Jewish Cemetery in Basatin.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>The Karaite Jewish <br />Cemetery in Basatin</h2>
+          <p class="top">
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show/?m=MQ5CoMKqs54">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 25 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/The Villa of the Birds.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>The Villa of the Birds</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://my.matterport.com/show-mds?m=GrbHTsV2U38">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 26 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/tomb of Meresankh III.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>tomb of Meresankh III</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a
+              href="https://my.matterport.com/show/?m=d42fuVA21To&referrer=https://www.smithsonianmag.com/"
+            >
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+      <!-- 27 -->
+      <div class="card rgb" data-tilt data-tilt-scale="1.1">
+        <div class="card-image">
+          <img src="../images/vr/Gayer-Anderson Museum.jpg" />
+        </div>
+        <div class="card-text">
+          <h2>Gayer-Anderson Museum</h2>
+          <p>
+            Look from here
+            <img src="../images/vr/hand2.png" class="hand" />
+            <a href="https://mpembed.com/show/?m=LCyv1zFUxiq&mpu=497">
+              <img src="../images/vr/vr.png" class="icon" />
+            </a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+
+    <script src="../js/vanilla-tilt.min.js"></script>
+    <script>
+      VanillaTilt.init(document.querySelectorAll('.card'), {
+        glare: true,
+        reverse: true,
+        'max-glare': 0,
+      });
+    </script>
+  </body>
+</html>

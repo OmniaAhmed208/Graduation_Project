@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Therapeutic Tourism</title>
+        <link rel="icon" href="../images/eye-of-ra.png">
+        <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+        <link rel="stylesheet" href="../css/types of tourism.css" />
+    </head>
+    <body class="body2">
+<!--============================header=============================-->
+<header class="header">
+    <nav class="navbar py-2 fixed-top" style="background:linear-gradient(to right, rgb(7 16 73 / 88%), rgb(207 226 237 / 78%))" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic Locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+    
+      <!---=======================================home====================================-->
+
+    <div class="container">
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+          </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Pharaoh-Bath.jpg" class="i2">
+                <h2>Pharaoh's Bath</h2>
+            </div>
+            <div class="content">
+                <h4>Cairo</h4>
+                <p>It is a group of hot sulfur water springs with a temperature of 27 degrees Celsius and it flows
+                      from Hammam Pharaoh Mountain, which is adjacent to the sea water.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/black-sand.webp">
+                <h2>Black Sand</h2>
+            </div>
+            <div class="content">
+                <h4>Kafr El-Sheikh</h4>
+                <p>It is used in the treatment of rheumatoid disease, chronic and acute arthritis, swelling,
+                     joint effusion (joint water), skin knots especially in the elbows,
+                      and skin infections associated with rheumatoid.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Dakrour-mountain.jpg" >
+                <h2>Dakrour mountain</h2>
+            </div>
+            <div class="content">
+                <h4>Siwa Oasis</h4>
+                <p>The mountain has acquired a therapeutic importance for the people
+                since ancient times in rheumatic diseases,
+                 joint pain, and a general feeling of weakness and weakness.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Boulaq-wells.jpg" class="i2">
+                <h2>Boulaq wells</h2>
+            </div>
+            <div class="content">
+                <h4>Kharga</h4>
+                <p>It can be used for treatment by burial in the sand (burial therapy) in joint
+                     diseases such as rheumatoid and osteoarthritis, and pain caused by atrophy
+                      of the cartilage of the dorsal, lumbar and sacral vertebrae</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Ain_Sokhna.jpg">
+                <h2>Ain Sukhna</h2>
+            </div>
+            <div class="content">
+                <h4>Siwa Oasis</h4>
+                <p>Mineral water springs that are used for natural treatment of several diseases such as psoriasis,
+                     gastrointestinal diseases and rheumatic diseases.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+
+    </body>
+</html>

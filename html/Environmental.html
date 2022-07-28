@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Environmental Tourism</title>
+        <link rel="icon" href="../images/eye-of-ra.png">
+        <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+        <link rel="stylesheet" href="../css/types of tourism.css" />
+    </head>
+    <body class="body4">
+<!--============================header=============================-->
+<header class="header" id="h1">
+    <nav class="navbar py-2 fixed-top" style="background: linear-gradient(to right, rgb(167 122 145 / 74%), rgb(255 211 121 / 80%))" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+          <!---=======================================home====================================-->
+
+      <div class="container">
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Rayan-Valley1.jpg" class="i2">
+                <h2>Wadi Al Rayan Reserve</h2>
+            </div>
+            <div class="content">
+                <h4 class="h41">Fayoum</h4>
+                <p>A very beautiful natural area, where there are some types of wild animals and birds,
+                     and there are also natural eyes and several types of rare plants</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Elba-Mountain-Reserve.jpg" class="i2">
+                <h2>Elba Mountain Reserve</h2>
+            </div>
+            <div class="content">
+                <h4 class="h41">Kafr El-Sheikh</h4>
+                <p>It includes archaeological natural and human resources dating back to ancient times.
+                    Some local tribes live in it, and it is a geologically diverse area, with plants,
+                     coral reefs, wells and fresh water springs.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Blue_Lagoon_South_Sinai.jpg" >
+                <h2>Abu Galum Reserve</h2>
+            </div>
+            <div class="content">
+                <h4>South of Sinaa</h4>
+                <p>It possesses types of rare plants, many types of wild birds and animals,
+                     in addition to various marine organisms and coral reefs.
+                      It also includes a group of mountains and valleys.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Lake-Qarun-Reserve.jpg" class="i2">
+                <h2>Lake Qarun Reserve</h2>
+            </div>
+            <div class="content">
+                <h4>Fayoum</h4>
+                <p>It has a large number of diverse fish, and reptiles and amphibians also live.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Nabq1.jpg" class="i2">
+                <h2>Nabq Nature Reserve</h2>
+            </div>
+            <div class="content">
+                <h4>Sharm El-Shaikh</h4>
+                <p>You can practice diving and swimming there, and it contains many different coral reefs,
+                and many types of colorful fish, in addition to the presence of many types of rare plants.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Taba.jpg" class="i2">
+                <h2>Taba Reserve</h2>
+            </div>
+            <div class="content">
+                <h4>Taba</h4>
+                <p>It owns many rare endangered animals and various coral reefs.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Ras-Muhammed.jpg">
+                <h2>In ras muhammed</h2>
+            </div>
+            <div class="content">
+                <h4>Sinai peninsula</h4>
+                <p>The best activities are that you can snorkel there. And there are a lot of coral beaches,
+                     and types of colorful fish, reptiles, and some endangered creatures.</p>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="imgBx">
+                <img src="../images/types/Brigadier-General.jpg">
+                <h2>Brigadier General's Reserve</h2>
+            </div>
+            <div class="content">
+                <h4>Matrouh</h4>
+                <p>It includes some predatory animals and birds, and types of insects and reptiles,
+                     as well as its fertile land, and many types of rare plants grow in it,
+                      some of which are used for medicinal purposes..</p>
+            </div>
+        </div>
+
+        </div>
+        
+        <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+    </body>
+</html>

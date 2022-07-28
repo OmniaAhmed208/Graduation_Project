@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Places</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/eye-of-ra.png">
+    <link rel="stylesheet" href="../css/all.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/index_style.css">
+    <link rel="stylesheet" href="../css/index_style2.css">
+    <link rel="stylesheet" href="../css/forNavBar.css">
+    <link rel="stylesheet" href="../css/page.css">
+
+</head>
+
+<body>
+ <!--============================header=============================-->
+<header class="header " >
+    <nav class="navbar py-2 fixed-top" style="background: #1118239e" id="navbar">
+      <a href="../php/index.php"><img src="../images/icon.png"  style="zoom: 12%;margin-left: -78px;"></a>
+      <a href="../php/index.php"><h2 class="navbar-brand text-white" 
+      style="font-size: 1.4rem; padding-left: 30px;padding-top:1.5%;font-family: sans-serif;">EGYPTOS</h2></a>
+      <div class="cont" style="margin-left: 55px;">
+        <input type="text" placeholder="Search...">
+        <div class="search"></div>
+      </div>
+      <div style="clear: both;"></div>
+        <ul class="nav-menu">
+            <li class="nav-item">
+                <a href="../php/index.php" class="nav-link" style="font-size: 1.0rem;">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#mapping" class="nav-link" style="font-size: 1.0rem;">Places</a>
+            </li>
+            <li class="nav-item" onclick="toggleFav();">
+                <a class="nav-link" style="font-size: 1.0rem; color: white; cursor: pointer;">Favourites</a>
+            </li>
+            <li class="nav-item dropdown" style="font-size: 1.6rem;">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown"
+              style="font-size: larger; color: white;font-size: 1.0rem;" href="#" 
+              role="button" aria-haspopup="true" aria-expanded="false">More</a>
+              <div class="dropdown-menu" style="min-width: 10.2rem; font-size: 13px;">
+                <a class="dropdown-item sm-1" href="types.html">Types of Tourism</a>
+                <a class="dropdown-item" href="vr.html">Virtual Reality</a>
+                <a class="dropdown-item" href="egypt-coin.html">Egypt Money</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Other Pages</a>
+                <div class="dropdown-menu" style="min-width: 10rem; font-size: 13px;">
+                  <a class="dropdown-item sm-1" href="prophets.html">Prophetic Locations</a>
+                  <a class="dropdown-item" href="JouHolyFamily.html">Holy Family Trip</a>
+                  <a class="dropdown-item" href="#">Religious places</a>
+                  <a class="dropdown-item" href="books.html">Egyption Books</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a href="testimonials.html" class="nav-link" style="font-size: 1.0rem;">Testimonials</a>
+            </li>
+            <li class="nav-item">
+              <a href="profile.html"><img src="../images/person2.png" class="account" style="zoom: 68%; margin: -43% 0 0 0;"></a>    
+            </li>
+
+        </ul>
+        <div class="hamburger" style=" background-color: transparent;">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+
+        </div>
+    </nav>
+  </header>
+      <!--=================================home==============================  -->
+    <div class="all">
+
+        <div class="Fav">
+            <div>
+              <img src="../images/close.png" class="close" onclick="toggleFav();">
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/alex1.jpg)'>
+            <div class="content" >
+                <h2 class="title"> Alexandria </h2>
+                <a href="alex.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/aswan.jpg)'>
+            <div class="content" >
+                <h2 class="title"> Aswan </h2>
+                <a href="aswan.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/asyut.jpg)'>
+            <div class="content" >
+                <h2 class="title">  Asyut </h2>
+                <a href="asyut.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Beheira.png)'>
+            <div class="content" >
+                <h2 class="title"> Beheira </h2>
+                <a href="beheira.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Beni-Suef.jpg)'>
+            <div class="content" >
+                <h2 class="title"> Beni Suef </h2>
+                <a href="BeniSuef.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Egypt-Ancient.jpg)'>
+            <div class="content" >
+                <h2 class="title"> Cairo </h2>
+                <a href="cairo.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/dakahlia.jpg)'>
+            <div class="content">
+                <h2 class="title"> Dakahlia </h2>
+                <a href="Dakahlia.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/damitta.jpg)'>
+            <div class="content">
+                <h2 class="title"> Damietta </h2>
+                <a href="Damietta.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Fayoum2.jpg)'>
+            <div class="content">
+                <h2 class="title"> Faiyum </h2> 
+                <a href="Faiyum.html" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/gharbia.jpg)'>
+            <div class="content">
+                <h2 class="title"> Gharbia </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/camel.jpg)'>
+            <div class="content" >
+                <h2 class="title"> Giza </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Ismailia.jpg)'>
+            <div class="content">
+                <h2 class="title"> Ismailia </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Kafr-El-Sheikh.jpg)'>
+            <div class="content">
+                <h2 class="title"> Kafr El Sheikh </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/luxor.jpg)'>
+            <div class="content">
+                <h2 class="title"> Luxor </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/matroh.jpg)'>
+            <div class="content">
+                <h2 class="title"> Matruh </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Minya.jpg)'>
+            <div class="content">
+                <h2 class="title"> Minya </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Monufia.jpg)'>
+            <div class="content">
+                <h2 class="title"> Monufia </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/new-vally-white-desert.jpg)'>
+            <div class="content">
+                <h2 class="title"> New Valley </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/North-Sinai.jpg)'>
+            <div class="content">
+                <h2 class="title"> North Sinai </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Port-Said.jpg)'>
+            <div class="content">
+                <h2 class="title"> Port Said </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/qalyoubia.jpg)'>
+            <div class="content">
+                <h2 class="title"> Qalyubia </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/qena-Templo-Het-Heru.jpg)'>
+            <div class="content">
+                <h2 class="title"> Qena </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Sharm-El-Sheikh-RedSea.jpg)'>
+            <div class="content">
+                <h2 class="title"> Red Sea </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/Sharqia.jpg)'>
+            <div class="content">
+                <h2 class="title"> Sharqia </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/sohag.jpg)'>
+            <div class="content">
+                <h2 class="title"> Sohag </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/south-sinai.jpg)' >
+            <div class="content">
+                <h2 class="title"> South Sinai </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+        </div>
+        
+        <div class="card" style='background-image: url(../images/page/suez.jpg)'>
+            <div class="content">
+                <h2 class="title"> Suez </h2>
+                <a href="#" class="btn"> Tourist Places </a>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <script src="images/https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="../js/jquery-3.5.0.min.js"></script>
+    <script src="../js/popper.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/dark-mode-switch.min.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/forNavBar.js"></script>
+    <script src="../js/header.js"></script>
+</body>
+</html>

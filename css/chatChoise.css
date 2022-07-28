@@ -1,0 +1,296 @@
+
+html {
+    scroll-behavior: smooth;
+    font-family: Helvetica, sans-serif, Arial;
+    background: #fff;
+}
+
+body {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    margin: 0 auto;
+    background: linear-gradient(to right, #191654, #43C6AC);
+}
+
+.cont1 {padding-top: 120px;}
+
+#hand{
+    width: 61px;
+    height: 70px;
+    margin-left: 1085px;
+    -webkit-transform: rotate(181deg);
+    -moz-transform: rotate(181deg);
+    -o-transform: rotate(181deg);
+    -ms-transform: rotate(181deg);
+    transform: rotate(181deg);
+    -webkit-animation: hand 1.5s infinite ease-in-out;
+    -moz-animation: hand 1.5s infinite ease-in-out;
+    -o-animation: hand 1.5s infinite ease-in-out;
+    animation: hand 1.5s infinite ease-in-out;
+}
+
+@keyframes hand{
+   0% {
+    margin-top: 50px;
+       
+   }
+   50% {
+    margin-top: 80px;
+   }
+   100%{
+    margin-top: 50px;
+   }
+}
+
+.paragraph{
+    color: black;
+    font-size: 39px;
+    font-family: sans-serif;
+    letter-spacing: 1px;
+    margin: 88px 0px -77px 133px;
+}
+
+.paragraph span{font-weight: bold;font-size: 54px;color: #aeceff;}
+
+.paragraph2{
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    line-height: 1.7;
+    margin: 99px 0px -77px 133px;
+}
+
+
+/*==================================*/
+
+.chat-bar-collapsible {
+    position: fixed;
+    bottom: 0;
+    right: 50px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.collapsible {
+    background-color: rgb(41 87 117);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 350px;
+    text-align: left;
+    outline: none;
+    font-size: 18px;
+    border-radius: 10px 10px 0px 0px;
+    border: 3px solid white;
+    border-bottom: none;
+}
+
+.content {
+    max-height: 0;
+    overflow: hidden;
+    -webkit-transition: max-height 0.2s ease-out ;
+    -moz-transition: max-height 0.2s ease-out ;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+    background-color: #f1f1f1;
+}
+
+.full-chat-block {
+    width: 350px;
+    background: white;
+    text-align: center;
+    overflow: auto;
+    scrollbar-width: none;
+    height: max-content;
+    -webkit-transition: max-height 0.2s ease-out;
+    -moz-transition: max-height 0.2s ease-out;
+    -o-transition: max-height 0.2s ease-out;
+    transition: max-height 0.2s ease-out;
+}
+
+.outer-container {min-height: 500px;bottom: 0%;position: relative;}
+
+.chat-container {
+    max-height: 500px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    scroll-behavior: smooth;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+}
+
+.chat-container::-webkit-scrollbar {display: none;}
+
+.chat-bar-input-block {
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+    background-color: rgb(235, 235, 235);
+    border-radius: 10px 10px 0px 0px;
+    padding: 10px 0px 10px 10px;
+}
+
+.chat-bar-icons {
+    display: flex;
+    justify-content: space-evenly;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 25%;
+    float: right;
+    font-size: 20px;
+}
+
+#chat-icon:hover {opacity: .7;}
+
+/* Chat bubbles */
+
+#userInput {width: 75%;}
+
+.input-box {
+    float: left;
+    border: none;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 16px;
+    color: #000;
+    background-color: white;
+    outline: none
+}
+
+.userText {
+    color: white;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-weight: normal;
+    text-align: right;
+    clear: both;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.userText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #5ca6fa;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-right-radius: 2px;
+    max-width: 80%;
+    margin-right: 10px;
+    -webkit-animation: floatup .5s forwards;
+    -moz-animation: floatup .5s forwards;
+    -o-animation: floatup .5s forwards;
+    animation: floatup .5s forwards;
+}
+
+.botText {
+    color: #000;
+    font-family: Helvetica;
+    font-weight: normal;
+    font-size: 16px;
+    text-align: left;
+    border: 1px solid transparent;
+    background: transparent;
+}
+
+.botText span {
+    line-height: 1.5em;
+    display: inline-block;
+    background: #e0e0e0;
+    padding: 10px;
+    border-radius: 8px;
+    border-bottom-left-radius: 2px;
+    max-width: 80%;
+    margin-left: 10px;
+    -webkit-animation: floatup .5s forwards;
+    -moz-animation: floatup .5s forwards;
+    -o-animation: floatup .5s forwards;
+    animation: floatup .5s forwards;
+}
+.q1,.q2,.cc {cursor: pointer;}
+
+.a1,.a2,.a3,.a4,.a5,.a6,.a7,.a8,
+.q3,.q4,.q5,.q6,.q7,
+.g1,.g2,.g3,.g4,.g5{
+    display: none;
+}
+
+.a2 span { float: inline-start;}
+
+.full-chat-block::-webkit-scrollbar { width: 0.5em; background-color: #f8f9fa;}
+
+.full-chat-block::-webkit-scrollbar-thumb {
+    background-color: #2957753b;
+    box-shadow: 0px 0px 30px 30px #c8d3db;
+}
+
+@keyframes floatup {
+    from {
+        transform: translateY(14px);
+        opacity: .0;
+    }
+    to {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .full-chat-block {
+        width: 100%;
+        border-radius: 0px;
+    }
+    .chat-bar-collapsible {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+    }
+    .collapsible {
+        width: 100%;
+        border: 0px;
+        border-top: 3px solid white;
+        border-radius: 0px;
+    }
+    .cont1 {
+        margin-left: -15%;
+        padding-top: 71px;
+    }
+    .paragraph {
+        font-size: 30px;
+    }
+    .paragraph span {
+        font-size: 42px;
+    }
+    @keyframes hand2{
+        0% {
+         margin-top: 100px;
+            
+        }
+        50% {
+         margin-top: 130px;
+        }
+        100%{
+         margin-top: 100px;
+        }
+    }
+    #hand{
+        margin-left:  37%;
+        animation: hand2 1.5s infinite ease-in-out;
+    } 
+}

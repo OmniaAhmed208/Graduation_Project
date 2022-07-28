@@ -1,0 +1,324 @@
+body::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: #111823;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #914e2c;
+  box-shadow: 0px 0px 30px 30px #914e2c;
+}
+
+html{font-size: 16px !important;}
+
+#loading
+{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(247, 117, 11);
+    z-index: 999999;
+   
+}
+
+.iconmo{width: 30px;cursor: pointer;}
+
+#test::after
+{
+    font-family: "Font Awesome 5 Free";
+     font-weight: 900; 
+     content: "\f07a";
+}
+#options
+{
+    position: fixed;
+    left: 0;
+    top: 150px;
+    z-index: 9999;
+}
+#options .color-box
+{
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    cursor: pointer;
+}
+#options .options-box
+{
+    background-color: #ccc;
+    padding: 15px;
+    border: solid rgb(247, 117, 11) 3px;
+}
+#options i
+{
+    background-color: rgb(247, 117, 11);
+    color: #fff;
+    padding: 10px;
+    cursor: pointer;
+
+}
+#options img{width: 35px;cursor: pointer;}
+
+#btnUp
+{
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: none;
+}
+#navbar
+{
+    -webkit-transition: background-color 1s;
+    -o-transition: background-color 1s;
+    transition: background-color 1s;
+}
+
+.img-item{width: 20%;float: left;cursor: pointer;}
+
+.text-sm {font-size: 0.9rem;}
+
+nav::after
+{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 5%;
+    background-color: transparent;
+    opacity: 0.7;
+    width: 90%;
+    height: 1px;
+}
+
+.text-opacity {color: rgba(255,255,255,.65)!important;}
+
+.navbar-nav .nav-link{color: #Fff; font-size: 0.85rem;padding: 1rem;}
+
+.overlay{background-color: rgba(0,0,0,0.55);height: 100%;}
+
+header h4
+{
+    position: relative;
+    -webkit-transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+            transform: rotate(-90deg);
+    -webkit-transform-origin: top right;
+        -ms-transform-origin: top right;
+            transform-origin: top right;
+}
+header h4::before
+{
+    content:"";
+    background-color: #fff;
+    right: 102%;
+    top: 50%;
+    height: 2px;
+    width: 2rem;
+    position: absolute;
+}
+
+@media (max-width:800px)
+{
+    header h4
+    {
+        -webkit-transform: rotate(0deg);
+            -ms-transform: rotate(0deg);
+                transform: rotate(0deg);
+    }
+}
+
+
+
+#features i {color: rgb(247, 117, 11)!important;font-size: 1.2rem;}
+
+#menu .nav-link {color: #000;font-weight: 700;}
+
+#menu .nav-pills .nav-link.active, .nav-pills .show>.nav-link
+{
+    background-color: transparent;
+    border-bottom: solid 1px rgb(247, 117, 11);
+    border-radius: 0;
+}
+.menu-item{position: relative;}
+
+.menu-item:after
+{
+    content: '';
+    width: 80%;
+    height: 1px;
+    background-color: rgba(0,0,0,0.05);
+    top: 100%;
+    left: 10%;
+    position: absolute;
+}
+
+#showing
+{
+    background-color:rgba(0, 0, 0, 0.4)!important;
+    padding-left: 5%;
+    margin: auto;
+}
+
+#services [class*=col-] {padding-left:5px ;padding-right: 5px;}
+
+  .x
+  {
+    -webkit-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+            transform: rotate(180deg);
+     
+  }
+
+
+  .spinner {
+    margin: 250px auto;
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 10px;
+  }
+  
+  .spinner > div {
+    background-color: #fff;
+    height: 100%;
+    width: 6px;
+    display: inline-block;
+    -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
+    animation: sk-stretchdelay 1.2s infinite ease-in-out;
+  }
+  
+  .spinner .rect2 {-webkit-animation-delay: -1.1s;animation-delay: -1.1s;}
+  
+  .spinner .rect3 {-webkit-animation-delay: -1.0s;animation-delay: -1.0s;}
+  
+  .spinner .rect4 {-webkit-animation-delay: -0.9s;animation-delay: -0.9s;}
+  
+  .spinner .rect5 {-webkit-animation-delay: -0.8s;animation-delay: -0.8s;}
+  
+  @-webkit-keyframes sk-stretchdelay {
+    0%, 40%, 100% { -webkit-transform: scaleY(0.4) }  
+    20% { -webkit-transform: scaleY(1.0) }
+  }
+  
+  @keyframes sk-stretchdelay {
+    0%, 40%, 100% { 
+      transform: scaleY(0.4);
+      -webkit-transform: scaleY(0.4);
+    }  20% { 
+      transform: scaleY(1.0);
+      -webkit-transform: scaleY(1.0);
+    }
+  }
+
+  .darkmode{background-color: #000;color: white;}
+
+  .im1{content:url("../images/stars1.png");}
+  .im2{content:url(" ../images/moon1.png");}
+  .im3{content:url("../images/mountain1.png");}
+  .im4{content:url("../images/mountain-back1.png");}
+  .im5{content:url("../images/mountain-front1.png");}
+  
+  /* forDarkmode */
+  
+  .toggle_switch{width: 100px;height: 45px;position: relative;}
+  
+  input[type="checkbox"].switch_3{
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    outline: 0;
+    z-index: 1;
+  }
+  
+  svg.checkbox .outer-ring{
+    stroke-dasharray: 375;
+    stroke-dashoffset: 375;
+    -webkit-animation: resetRing .35s ease-in-out forwards;
+            animation: resetRing .35s ease-in-out forwards;
+  }
+  
+  input[type="checkbox"].switch_3:checked + svg.checkbox .outer-ring{
+    -webkit-animation: animateRing .35s ease-in-out forwards;
+            animation: animateRing .35s ease-in-out forwards;
+  }
+  
+  input[type="checkbox"].switch_3:checked + svg.checkbox .is_checked{
+    opacity: 1;
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+  }
+  
+  input[type="checkbox"].switch_3:checked + svg.checkbox .is_unchecked{
+    opacity: 0;
+    -webkit-transform: translateX(-200%) rotate(180deg);
+            transform: translateX(-200%) rotate(180deg);
+  }
+  
+  
+  svg.checkbox{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
+  svg.checkbox .is_checked{
+    opacity: 0;
+    fill: yellow;
+    box-shadow: 50% yellow;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: translateX(200%) rotate(45deg);
+            transform: translateX(200%) rotate(45deg);
+    -webkit-transition: all .35s;
+    transition: all .35s;
+  }
+  
+  svg.checkbox .is_unchecked{
+    opacity: 1;
+    fill: #fff;
+    -webkit-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transform: translateX(0) rotate(0deg);
+            transform: translateX(0) rotate(0deg);
+    -webkit-transition: all .35s;
+    transition: all .35s;
+  }
+  
+  @-webkit-keyframes animateRing{
+    to{
+      stroke-dashoffset: 0;
+      stroke:#b0aa28;
+    }
+  }
+  
+  @keyframes animateRing{
+    to{
+      stroke-dashoffset: 0;
+      stroke:#b0aa28;
+    }
+  }
+  
+  @-webkit-keyframes resetRing{
+    to{
+      stroke-dashoffset: 0;
+      stroke:#233043;
+    }
+  }
+  
+  @keyframes resetRing{
+    to{
+      stroke-dashoffset: 0;
+      stroke: #233043;
+    }
+  }
